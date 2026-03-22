@@ -1,0 +1,27 @@
+﻿<package>
+  <metadata>
+    <id>Msagl</id>
+    <version>BuildVersion</version>
+    <authors>levnach</authors>
+    <owners>Microsoft</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/Microsoft/automatic-graph-layout</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>This .NET assembly contains the core MSAGL functionality. Use it when you just need a layout and the visualization is done by other means.</description>
+    <releaseNotes>The release contains bug fixes and code cleanup. Some defines like TEST_MSAGL were removed.</releaseNotes>
+    <copyright>Copyright © Microsoft Corporation</copyright>
+    <language>en-US</language>
+    <tags>MSAGL Graph Layout</tags>
+    <dependencies>
+    <group targetFramework=".NETStandard2.0">
+        <!-- Add any dependencies here -->
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="./bin/release/netstandard2.0/Microsoft.Msagl.dll" target="lib/netstandard2.0" />
+    <file src="./bin/release/netstandard2.0/Microsoft.Msagl.xml" target="lib/netstandard2.0" />
+  </files>
+</package>
