@@ -91,13 +91,7 @@ namespace Microsoft.Msagl.UnitTests {
         }
 
         public static bool EnableDebugViewer() {
-            if (DontShowTheDebugViewer()) {
-                return false;
-            }
-
-            GraphViewerGdi.DisplayGeometryGraph.SetShowFunctions();
-            return true;
-
+            return false;
         }
 
         internal static bool DontShowTheDebugViewer() {
@@ -113,11 +107,6 @@ namespace Microsoft.Msagl.UnitTests {
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1801:ReviewUnusedParameters", MessageId = "graph")]
         protected static void ShowGraphInDebugViewer(GeometryGraph graph) {
-            if (graph == null || LayoutAlgorithmSettings.ShowDebugCurvesEnumeration == null || DontShowTheDebugViewer()) {
-                return;
-            }
-            GraphViewerGdi.DisplayGeometryGraph.ShowGraph(graph);
-
         }
 
         protected GeometryGraph LoadGraph(string geometryGraphFileName) {

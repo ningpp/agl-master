@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <LangVersion>latest</LangVersion>
     
     <AssemblyName>Microsoft.Msagl.UnitTests</AssemblyName>
@@ -16,7 +16,6 @@
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
     <ProjectReference Include="../../MSAGL/AutomaticGraphLayout.csproj"/>
     <ProjectReference Include="../../Drawing/AutomaticGraphLayout.Drawing.csproj"/>
-    <ProjectReference Include="../../tools/GraphViewerGDI/GraphViewerGDI.csproj"/>
     <ProjectReference Include="../../tools/Dot2Graph/Dot2graph.csproj"/>
   </ItemGroup>
   <ItemGroup>

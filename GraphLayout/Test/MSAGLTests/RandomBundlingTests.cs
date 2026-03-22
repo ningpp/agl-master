@@ -6,7 +6,6 @@
 
 using System;
 using System.Linq;
-using Microsoft.Msagl.GraphViewerGdi;
 using Microsoft.Msagl.Core.Geometry;
 using Microsoft.Msagl.Core.Geometry.Curves;
 using Microsoft.Msagl.Core.Layout;
@@ -179,7 +178,6 @@ namespace Microsoft.Msagl.UnitTests {
         public static void RsmContent() {
             const int ntest = 8;
             int iStart = 0;            
-            DisplayGeometryGraph.SetShowFunctions();
             for (int i = iStart; i < ntest; i++) {
                 Random random = new Random(i);
                 int multiplier = random.Next() % 5 + 1;
