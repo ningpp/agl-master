@@ -31,7 +31,7 @@ namespace Microsoft.Msagl.UnitTests
     /// Test class for methods inside EdgeRouterHelper
     /// </summary>
     [TestClass]
-    [DeploymentItem(@"Resources\MSAGLGeometryGraphs")]
+    [DeploymentItem("Resources/MSAGLGeometryGraphs")]
     public class SplineRouterTests : MsaglTestBase
     {
         [TestMethod]
